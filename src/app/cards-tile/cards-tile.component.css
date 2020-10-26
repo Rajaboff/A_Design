@@ -1,0 +1,77 @@
+
+.cards {
+    width: 32%;
+}
+
+.card-div {
+    height: 250px;
+    margin-top: 43px;
+    background-color: #F7F8F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+}
+
+img {
+    height: 70%;
+}
+
+.title {
+    color: #222;
+    font-size: 28px;
+}
+
+.wrap {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card-pos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards > h1 {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #A6ABB0;
+    font-weight: 500;
+}
+
+.download-icon {
+    display: none;
+    height: 25%;
+}
+
+.card-div:hover{
+    background-color: #39B980;
+    cursor: pointer;
+}
+
+.card-div:hover > img {
+    display: none;
+}
+
+.card-div:hover > .download-icon {
+    display: inline;
+}
+
+@media screen and (max-width: 1200px){
+    .cards {
+        width: 49%;
+    }
+}  
+
+@media screen and (max-width: 820px){
+    .cards {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .card-div {
+        height: 200px;
+    }
+}

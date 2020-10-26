@@ -1,0 +1,87 @@
+.title {
+    color: #222;
+    font-size: 28px;
+}
+
+.color-pos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.colors {
+    width: 32%;
+}
+
+.color-div {
+    margin-top: 43px;
+    background-color: #F7F8F9;
+    height: 210px;
+    border-radius: 6px;
+    padding: 35px;
+}
+
+.color-div > h1 {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.colors-id {
+    margin-top: 45px;
+}
+
+.colors-id > p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    white-space: pre-wrap;
+}
+
+.download-icon {
+    display: none;
+    height: 40%;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    cursor: default;
+}
+
+#copies {
+    display: none;
+    color: white;
+    font-size: 20px;
+}
+
+.color-div:hover{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-div:hover > div,.color-div:hover > h1 {
+    display: none;
+}
+
+
+span {
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1200px){
+    .colors {
+        width: 49%;
+    }
+}  
+
+@media screen and (max-width: 820px){
+    .colors {
+        width: 100%;
+    }
+}

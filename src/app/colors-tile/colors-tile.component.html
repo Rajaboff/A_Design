@@ -1,0 +1,19 @@
+<div class="wrap">
+    <h1 class="title">Цвета</h1>
+    <div class="color-pos">
+        <div class="colors" *ngFor="let color of colors">
+            <div class="color-div" [ngStyle]="{'background-color': color.hex}" (mouseenter)="copyToClipboard=color.hex; icon.style.display='inline'"
+            (click)="copyColor(copyHEX); icon.style.display='none'; copies.style.display='inline'" (mouseleave)="icon.style.display='none'; copies.style.display='none'">
+                <h1>{{color.title}}</h1>
+                <div class="colors-id">
+                    <p><span>HEX: </span> {{color.hex}}</p>
+                    <p><span>RGB: </span> {{color.rgb}}</p>
+                    <p><span>CMYK: </span> {{color.cmyk}}</p>
+                </div>
+                <img #icon class="download-icon" src="../../assets/img/icons/copy.svg" alt="Download">
+                <p #copies id="copies">Скопировано</p>
+            </div>
+        </div>
+        <input readonly #copyHEX type="text" [(ngModel)]="copyToClipboard">
+    </div>
+</div>
